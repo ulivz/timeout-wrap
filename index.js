@@ -1,10 +1,6 @@
 module.exports = function (rawPromise, defaultValue, timeout) {
   return new Promise((resolve, reject) => {
-    const timer = setTimeout(() => {
-      console.log('[Warn] Timeout, use default value.')
-      resolve(defaultValue)
-    }, timeout)
-
+    const timer = setTimeout(() => resolve(defaultValue), timeout)
     rawPromise
       .then(output => {
         clearTimeout(timer)

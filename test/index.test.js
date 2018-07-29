@@ -17,21 +17,21 @@ const mockPromise = (
   })
 
 test('should get output when not timeout', async () => {
-  const promise = mockPromise(1000)
-  const output = await wrap(promise, DEFAULT_OUTPUT, 2000)
+  const promise = mockPromise(100)
+  const output = await wrap(promise, DEFAULT_OUTPUT, 200)
   expect(output).toBe(EXPECTED_OUTPUT)
 })
 
 test('should get default output when timeout', async () => {
-  const promise = mockPromise(3000)
-  const output = await wrap(promise, DEFAULT_OUTPUT, 2000)
+  const promise = mockPromise(300)
+  const output = await wrap(promise, DEFAULT_OUTPUT, 200)
   expect(output).toBe(DEFAULT_OUTPUT)
 })
 
 test('should get error correctly', async () => {
-  const promise = mockPromise(1000, true /* throw error */)
+  const promise = mockPromise(100, true /* mock error */)
   try {
-    await wrap(promise, DEFAULT_OUTPUT, 2000)
+    await wrap(promise, DEFAULT_OUTPUT, 200)
   } catch (e) {
     expect(e).toBe(EXPECTED_ERROR)
   }
