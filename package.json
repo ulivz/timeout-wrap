@@ -1,6 +1,6 @@
 {
   "name": "timeout-wrap",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Wraps a Promise, resolves default value if a timeout threshold is reached",
   "repository": {
     "url": "ULIVZ/timeout-wrap",
