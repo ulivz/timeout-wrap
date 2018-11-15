@@ -1,6 +1,9 @@
-module.exports = function (rawPromise, defaultValue, timeout) {
+module.exports = function (promises, timeout, intialValue) {
+  promises = Array.isArray(promises)
+    ? promises
+    : [promises]
   return Promise.race([
-    rawPromise,
-    new Promise(resolve => setTimeout(() => resolve(defaultValue), timeout))
+    ...promises,
+    new Promise(resolve => setTimeout(() => resolve(intialValue), timeout))
   ])
 }
