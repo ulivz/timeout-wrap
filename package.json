@@ -32,6 +32,9 @@
     "extends": "rem",
     "envs": [
       "jest"
-    ]
+    ],
+    "rules": {
+      "operator-linebreak": 0
+    }
   }
 }
