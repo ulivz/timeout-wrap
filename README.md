@@ -14,8 +14,14 @@ yarn add timeout-wrap
 
 ```js
 const wrap = require('timeout-wrap')
-const promise = /* raw promise */
-const wrappedPromise = wrap(promise, 'default-output', 2000 /* timeout threshold */)
+
+const myPromise = new Promise(resolve => {
+  timer1 = setTimeout(() => resolve('output'), 300)
+})
+
+const promise = wrap(myPromise, 200, 'default')
+
+promise.then(res => console.log(res)) // 'default'
 ```
 
 ## Contributing
