@@ -18,20 +18,20 @@ const mockPromise = (
 
 test('should get output when not timeout', async () => {
   const promise = mockPromise(100)
-  const output = await wrap(promise, DEFAULT_OUTPUT, 200)
+  const output = await wrap(promise, 200, DEFAULT_OUTPUT)
   expect(output).toBe(EXPECTED_OUTPUT)
 })
 
 test('should get default output when timeout', async () => {
   const promise = mockPromise(300)
-  const output = await wrap(promise, DEFAULT_OUTPUT, 200)
+  const output = await wrap(promise, 200, DEFAULT_OUTPUT)
   expect(output).toBe(DEFAULT_OUTPUT)
 })
 
 test('should get error correctly', async () => {
   const promise = mockPromise(100, true /* mock error */)
   try {
-    await wrap(promise, DEFAULT_OUTPUT, 200)
+    await wrap(promise, 200, DEFAULT_OUTPUT)
   } catch (e) {
     expect(e).toBe(EXPECTED_ERROR)
   }
