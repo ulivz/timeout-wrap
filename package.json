@@ -23,11 +23,11 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "jest-cli": "^22.1.4",
-    "eslint-config-rem": "^3.0.0",
-    "xo": "^0.18.0",
+    "jest-cli": "^24.8.0",
+    "eslint-config-rem": "^4.0.0",
+    "xo": "^0.24.0",
     "conventional-changelog-cli": "^2.0.1",
-    "release-it": "v7.4.8"
+    "release-it": "12.3.4"
   },
   "xo": {
     "extends": "rem",
