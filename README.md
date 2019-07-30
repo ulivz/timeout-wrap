@@ -2,7 +2,7 @@
 # timeout-wrap
 
 [![NPM version](https://img.shields.io/npm/v/timeout-wrap.svg?style=flat)](https://npmjs.com/package/timeout-wrap) [![NPM downloads](https://img.shields.io/npm/dm/timeout-wrap.svg?style=flat)](https://npmjs.com/package/timeout-wrap) [![CircleCI](https://circleci.com/gh/ULIVZ/timeout-wrap/tree/master.svg?style=shield)](https://circleci.com/gh/ULIVZ/timeout-wrap/tree/master)  [![codecov](https://codecov.io/gh/ULIVZ/timeout-wrap/branch/master/graph/badge.svg)](https://codecov.io/gh/ULIVZ/timeout-wrap)
- [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://github.com/ULIVZ/donate)
+ [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://github.com/ULIVZ/donate) [![Greenkeeper badge](https://badges.greenkeeper.io/ulivz/timeout-wrap.svg)](https://greenkeeper.io/)
 
 ## Install
 
